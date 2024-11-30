@@ -20,7 +20,10 @@ nav{
     z-index: 2;
     top: 0;
     width: 80%;
-    background-color: #2c2c2c;
+    background-color: #000000e0;
+    padding: 0 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 nav ul li{
     display: inline-block;
@@ -119,15 +122,15 @@ p{
 
 /*************************Contact and More Info**********************************/
 #more-info{
-    background-color: #000000;
+    background-color: #000000e0;
     color: white;
     bottom: 0; 
     left: 0; 
     right: 0; 
     margin-top: 
     50px; 
-    border-radius: 50px; 
-    padding: 10px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
 }
 .more-info-left{
     flex-basis: 35%;
@@ -214,7 +217,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #76ffcd;
+        background: #202020f4;
         position: fixed;
         top: 0;
         right: -200px;
@@ -223,6 +226,8 @@ nav .fas{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
     nav ul .fas{
         position: absolute;
@@ -233,6 +238,13 @@ nav .fas{
     nav ul li{
         display: block;
         margin: 25px;
+        right: 100px;
+
+    }
+    nav ul li a{
+        background-color: #00ffa2bb;
+        padding: 4px;
+        border-radius: 4px;
     }
     .sub-title{
         font-size: 40px;
@@ -262,6 +274,7 @@ nav .fas{
     }
     .more-info-left, .more-info-right{
         flex-basis: 100%;
+        font-size: 14px;
     }
 }
 
