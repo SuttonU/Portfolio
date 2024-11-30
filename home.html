@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+    <title>Sutton Jones Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <!--Header-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><b>Sutton Jones</b></h1>
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-me">About me</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#more-info">More Info</a>
+                    </li>
+                    <i class="fas fa-window-close" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 style="text-align: left;">
+                    Hi, my name is Sutton Jones.
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------About me-->
+    <div id="about-me">
+        <div class="container">
+            <div class="row">
+                <!--image-->
+                <div class="about-col1">
+                    <img src="images/3.png" class="image">
+                </div>
+                <!--text-->
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>   
+                        Hello and welcome to my portfolio,  My name is Sutton, I am currently attending North Idaho college for an Associates degree in Computer Science. 
+                        With my Associates degree I am planning on attending the University of Idaho where I will earn my Bachellor's degree in Computer Science.
+                    </p>
+                    <p>Ever since I was young I was always fascinated by the inner workings of computers, programs, and video games. 
+                        At North Idaho College I have learned much about how computers work and how programs are able to run on them.
+                        My classes have also taught me very important skills in the field such as:
+                        <ul>
+                            <li>Debugging</li>
+                            <li>Communication</li>
+                            <li>Problem solving</li>
+                        </ul>
+                        Over my time at NIC I have completed many different projects of varying complexity.  
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Portfolio---------------------------->
+    <div id="portfolio">
+        <div class="container"> 
+            <h1 class="sub-title">My Projects</h1>
+            <div class="row">
+                <div class="proj-col1">
+                    <h2>Battle Ship</h2>
+                    <p>
+                        My first major project was Battle Ship.  Battle Ship first introduced me to the game loop: Update, Render, Display.
+                        My Partner and I worked our way through it pretty fast and were able to incorporate color.  The program features: a simple computer opponent,
+                        random placement of ships, manual placement of ships, and hit and miss detection.
+                    </p>
+                    <p>
+                        This was really fun as we were able to apply most of what we learned during the semester to making the game.  
+                    </p>
+                </div>
+                <div class="proj-col2">
+                    <img src="images/battleship.png" class="project" style="float: left;" width="500px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="proj-col1">
+                    <img src="images/Cman-ezgif.com-video-to-gif-converter.gif" class="project" style="float: left;" width="500px">
+                </div>
+                <div class="proj-col2">
+                    <h2>Pac-man</h2>
+                        <p>
+                            I believe my most impressive project yet is Pac-man.  Me and my two partners remade Pac-man in C++ from scratch.
+                            we had only recently learned how to incorporate graphics into a program and had not gone over features that would be important to the game such as
+                            hitboxes, audio, pathfinding, and animations.  However using resources we found online going in depth into the pathfinding as well as some thinking outside of the box
+                            we were able to solve all of these issues in the final weeks before the project was due.
+                        </p>
+                        <p>
+                            The project had a rocky start and may not be perfect but it had taught me to have a roadmap in mind for what features would be necessary
+                            instead of just working on random bits and pieces throughout the game.
+                        </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="proj-col1">
+                    <h2>16 bit Minecraft Calculator</h2>
+                        <p>
+                            I am a big fan on Minecraft.  Recently there has been a new wave of Minecraft players who have been building computers and simple programs within minecraft.
+                            Watching these videos inspired me to create a 16 bit calculator inside of Minecraft capable of calculating values from -32,768 to 32,767.  This project was fun to build and plan.  The most tricky part was
+                            fitting all the blocks and trying to make it look nice.
+                        </p>
+                </div>
+                <div class="proj-col2">
+                    <img src="images/2024-05-02_11.29.33.png" class="project" style="float: left;" width="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------Contact + More info---------------------------------------->
+    <!--Social Media Icons-->
+    <script src="https://kit.fontawesome.com/586d232b53.js" crossorigin="anonymous"></script>
+
+    <div id="more-info">
+        <div class="container">
+            <div class="row">
+                <div class="more-info-left">
+                    <h1 class="sub-title">
+                        More Info
+                    </h1>
+                    <!-----------------Social Links---------------------->
+                    <div class="social-icons">
+                        <h2>Socials</h2>
+                        <a href="https://gitHub.com/SuttonU" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://discordapp.com/users/518481703828979718" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.linkedin.com/in/sutton-jones-489879304/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="projects">
+                        <h2>Links to Projects</h2>
+                        <a href="https://github.com/CS150-Fall23/pa8-redteam" id="battleship">Battle Ship</a>
+                        <a href="https://github.com/SuttonU/C-Man" id="cman">Pac-man</a>
+                        <a href="Minecraft Redstone Calculator.zip" id="minecraft">Minecraft World Download</a>
+                    </div>
+                </div>
+                <div class="more-info-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" style="background-color: inherit; border: none;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxgb0PMPd6baTJkyRlSXN7Srjq7fbEIETzMairTv3HozTeul8AEhTRyGBaEZ4KU4HY43Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("message")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
