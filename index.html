@@ -7,46 +7,43 @@
 </head>
 <body>
     <!--Header-->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h1><b>Sutton Jones</b></h1>
-                <ul id="sidemenu">
-                    <li>
-                        <a href="#header">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about-me">About me</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#more-info">More Info</a>
-                    </li>
-                    <i class="fas fa-window-close" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1 style="text-align: left;">
-                    Hi, my name is Sutton Jones.
-                </h1>
-            </div>
-        </div>
-    </div>
+    <header class="container" id="header">
+        <h1 style="text-align: left; color: #ffffff;">
+            Hi, my name is Sutton Jones.
+        </h1>
+    </header>
+
+    <nav class="container">
+        <h1><b>My Portfolio</b></h1>
+        <ul id="sidemenu">
+            <li>
+                <a href="#header">Home</a>
+            </li>
+            <li>
+                <a href="#about-me">About me</a>
+            </li>
+            <li>
+                <a href="#portfolio">Projects</a>
+            </li>
+            <li>
+                <a href="#footer">More Info</a>
+            </li>
+            <i class="fas fa-window-close" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
 
     <!-----------------------------------About me-->
     <div id="about-me">
         <div class="container">
+            <h1 class="sub-title Title">About Me</h1>
             <div class="row">
                 <!--image-->
-                <div class="about-col1">
+                <div class="about-left">
                     <img src="images/3.png" class="image">
                 </div>
                 <!--text-->
-                <div class="about-col2">
-                    <h1 class="sub-title">About Me</h1>
+                <div class="about-right">
                     <p>   
                         Hello and welcome to my portfolio,  My name is Sutton, I am currently attending North Idaho college for an Associates degree in Computer Science. 
                         With my Associates degree I am planning on attending the University of Idaho where I will earn my Bachellor's degree in Computer Science.
@@ -65,12 +62,12 @@
             </div>
         </div>
     </div>
-    <!--------------------------Portfolio---------------------------->
+    <!--------------------------Projects section---------------------------->
     <div id="portfolio">
         <div class="container"> 
-            <h1 class="sub-title">My Projects</h1>
+            <h1 class="sub-title Title">My Projects</h1>
             <div class="row">
-                <div class="proj-col1">
+                <div class="proj-left">
                     <h2>Battle Ship</h2>
                     <p>
                         My first major project was Battle Ship.  Battle Ship first introduced me to the game loop: Update, Render, Display.
@@ -81,15 +78,15 @@
                         This was really fun as we were able to apply most of what we learned during the semester to making the game.  
                     </p>
                 </div>
-                <div class="proj-col2">
+                <div class="proj-right">
                     <img src="images/battleship.png" class="project" style="float: left;" width="500px">
                 </div>
             </div>
             <div class="row">
-                <div class="proj-col1">
+                <div class="proj-left">
                     <img src="images/Cman-ezgif.com-video-to-gif-converter.gif" class="project" style="float: left;" width="500px">
                 </div>
-                <div class="proj-col2">
+                <div class="proj-right">
                     <h2>Pac-man</h2>
                         <p>
                             I believe my most impressive project yet is Pac-man.  Me and my two partners remade Pac-man in C++ from scratch.
@@ -104,7 +101,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="proj-col1">
+                <div class="proj-left">
                     <h2>16 bit Minecraft Calculator</h2>
                         <p>
                             I am a big fan on Minecraft.  Recently there has been a new wave of Minecraft players who have been building computers and simple programs within minecraft.
@@ -112,7 +109,7 @@
                             fitting all the blocks and trying to make it look nice.
                         </p>
                 </div>
-                <div class="proj-col2">
+                <div class="proj-right">
                     <img src="images/2024-05-02_11.29.33.png" class="project" style="float: left;" width="500px">
                 </div>
             </div>
@@ -122,39 +119,40 @@
     <!--Social Media Icons-->
     <script src="https://kit.fontawesome.com/586d232b53.js" crossorigin="anonymous"></script>
 
-    <div id="more-info">
-        <div class="container">
+    <footer id="footer" class="container">
+            <h1 class="sub-title">
+                More Info
+            </h1>
             <div class="row">
-                <div class="more-info-left">
-                    <h1 class="sub-title">
-                        More Info
-                    </h1>
+                <div class="col-1">
+                    
+                    <h2>Socials</h2>
                     <!-----------------Social Links---------------------->
                     <div class="social-icons">
-                        <h2>Socials</h2>
                         <a href="https://gitHub.com/SuttonU" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://discordapp.com/users/518481703828979718" target="_blank"><i class="fab fa-discord"></i></a>
                         <a href="https://www.linkedin.com/in/sutton-jones-489879304/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
+                    
+                </div>
+                <div class="col-2">
+                    <h2>Links to Projects</h2>
                     <div class="projects">
-                        <h2>Links to Projects</h2>
+                        
                         <a href="https://github.com/SuttonU/Battle-Ship" id="battleship">Battle Ship</a>
                         <a href="https://github.com/SuttonU/C-Man" id="cman">Pac-man</a>
                         <a href="Minecraft Redstone Calculator.zip" id="minecraft">Minecraft World Download</a>
                     </div>
                 </div>
-                <div class="more-info-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="text" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" style="background-color: inherit; border: none;"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <span id="message"></span>
+                <div class="col-3">
+                    <h2>Email Me</h2>
+                    <div class="projects">
+                        <a href="mailto:smjones08@outlook.com?subject=Portfolio(keep)" target="_blank"><i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
                 </div>
+                
             </div>
-        </div>
-    </div>
+    </footer>
 </body>
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -165,20 +163,3 @@
         sidemenu.style.right= "-200px"
     }
 </script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxgb0PMPd6baTJkyRlSXN7Srjq7fbEIETzMairTv3HozTeul8AEhTRyGBaEZ4KU4HY43Q/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("message")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000);
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
