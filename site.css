@@ -7,11 +7,12 @@ ul{
     padding-left: 2em;
 }
 body{
-    background-color: #2c2c2c;
-    color: #ffffff;
+    background-color: #dadada;
+    color: #2c2c2c;
     font-family: sans-serif;
 }
 nav{
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,6 +21,7 @@ nav{
     z-index: 2;
     top: 0;
     width: 80%;
+    left: 10%;
     background-color: #000000e0;
     padding: 0 10px;
     border-bottom-left-radius: 10px;
@@ -51,15 +53,15 @@ nav ul li a:hover::after{
     height: 5px;
     width: 100%;
 }
-.header-text{
+header h1{
     margin-top: 5%;
     font-size: 30px;
 }
-.header-text h1{
+.Title{
     font-size: 60px;
     margin-top: 20px;
 }
-#header{
+header{
     width: 100%;
     background-color: #2c2c2c;
 }
@@ -72,7 +74,7 @@ p{
 }
 #about-me{
     padding: 80px 0px;
-    color: #d6d6d6;
+    color: #2c2c2c;
 }
 .row{
     display: flex;
@@ -80,14 +82,14 @@ p{
     flex-wrap: wrap;
     margin: 20px 0;
 }
-.about-col1{
+.about-left{
     flex-basis: 35%;
 }
-.about-col1 img{
+.about-left img{
     width: 100%;
     border-radius: 15px;
 }
-.about-col2{
+.about-right{
     flex-basis: 60%;
 }
 .sub-title{
@@ -105,40 +107,45 @@ p{
     position: relative;
     overflow: hidden;
 }
-.proj-col1{
+.proj-left{
     flex-basis: 45%;
 }
-.proj-col2{
+.proj-right{
     flex-basis: 50%;
 }
-.proj-col2 img{
+.proj-right img{
     width: 100%;
     border-radius: 15px;
 }
-.proj-col1 img{
+.proj-left img{
     width: 100%;
     border-radius: 15px;
 }
 
 /*************************Contact and More Info**********************************/
-#more-info{
+footer{
     background-color: #000000e0;
     color: white;
     bottom: 0; 
-    left: 0; 
-    right: 0; 
+    width: 100%;
     margin-top: 
     50px; 
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px; 
 }
-.more-info-left{
-    flex-basis: 35%;
+footer h1{
+    text-align: center;
 }
-.more-info-right{
-    flex-basis: 60%;
+.col-1{
+    flex-basis: 30%;
 }
-.more-info-left p{
+.col-2{
+    flex-basis: 30%;
+}
+.col-3{
+    flex-basis: 30%;
+}
+.col-1 p{
     margin-top: 30px;
 }
 .social-icons{
@@ -157,21 +164,6 @@ p{
     transform: scale(1.5,1.5);
     transition: 0.25s;
 }
-.more-info-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #2f3130;
-    padding: 15px;
-    margin: 15px 0;
-    color: #ffffff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-
 .projects{
     display: flex;
     flex-direction: column;
@@ -204,12 +196,13 @@ nav .fas{
     p{
         text-indent: 2em;
     }
-    .header-text{
+    header{
         font-size: 16px;
     }
 
-    .header-text h1{
-        font-size: 30px;
+    header h1{
+        margin-top: 40px;
+        font-size: 20px;
     }
 
     nav .fas{
@@ -249,30 +242,30 @@ nav .fas{
     .sub-title{
         font-size: 40px;
     }
-    .about-col1, .about-col2{
+    .about-left, .about-right{
         flex-basis: 100%;
     }
-    .about-col1{
+    .about-left{
         margin-bottom: 30px;
     }
-    .about-col2{
+    .about-right{
         font-size: 14px;
     }
-    .proj-col1{
+    .proj-left{
         flex-basis: 100%;
         font-size: 14px;
     }
-    .proj-col2{
+    .proj-right{
         flex-basis: 100%;
         font-size: 14px;
     }
-    .proj-col1 img{
+    .proj-left img{
         margin: 10px 0;
     }
-    .proj-col2 img{
+    .proj-right img{
         margin: 10px 0;
     }
-    .more-info-left, .more-info-right{
+    footer .col-1, footer .col-2{
         flex-basis: 100%;
         font-size: 14px;
     }
