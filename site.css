@@ -124,6 +124,7 @@ p{
 
 /*************************Contact and More Info**********************************/
 footer{
+    text-align: center;
     background-color: #000000e0;
     color: white;
     bottom: 0; 
