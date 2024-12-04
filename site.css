@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 ul{
     padding-left: 2em;
 }
@@ -67,6 +68,8 @@ header{
 }
 .container{
     padding: 10px 10%;
+    /*opacity: 0;*/
+    transition: opacity 0.5s ease;
 }
 /*----------------------About Me--------------------*/
 p{
@@ -92,7 +95,7 @@ p{
 .about-right{
     flex-basis: 60%;
 }
-.sub-title{
+.title2{
     font-size: 60px;
     font-weight: 600;
 
@@ -124,9 +127,10 @@ p{
 
 /*************************Contact and More Info**********************************/
 footer{
+    overflow: hidden;
     background-color: #000000e0;
     color: white;
-    bottom: 0; 
+    bottom: -400px; 
     width: 100%;
     margin-top: 
     50px; 
@@ -134,17 +138,22 @@ footer{
     border-top-right-radius: 15px; 
     text-align: center;
 }
-footer h1{
+footer button h1{
     text-align: center;
 }
 .col-1{
     flex-basis: 30%;
+    margin-bottom: 40px;
 }
 .col-2{
     flex-basis: 30%;
+    
+    margin-bottom: 40px;
 }
 .col-3{
     flex-basis: 30%;
+    
+    margin-bottom: 40px;
 }
 .col-1 p{
     margin-top: 30px;
@@ -169,7 +178,6 @@ footer h1{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    
 }
 .projects a{
     padding: 10px 0;
@@ -184,6 +192,7 @@ footer h1{
 }
 #minecraft:hover{
     color: forestgreen;
+    font-family: 'minecraft_font.ttf';
 }
 
 /*************************************Small Screen devices*****************************************************/
@@ -192,7 +201,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 
     p{
         text-indent: 2em;
@@ -240,7 +249,7 @@ nav .fas{
         padding: 4px;
         border-radius: 4px;
     }
-    .sub-title{
+    .title2{
         font-size: 40px;
     }
     .about-left, .about-right{
@@ -266,14 +275,27 @@ nav .fas{
     .proj-right img{
         margin: 10px 0;
     }
-    footer .col-1, footer .col-2{
+    footer .col-1, footer .col-2, footer .col-3{
         flex-basis: 100%;
         font-size: 14px;
     }
 }
 
-#message{
-    color: #00ffa2;
-    margin-top: 10px;
-    display: block;
+#openFooter{
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #00ffa2;
+    color: #FFFFFF;
+    background-color: #2c2c2c;
+}
+
+footer .row{
+    z-index: 2;
+    position: relative;
+    bottom: -400px;
+    transition: bottom 0.5s;
+}
+
+footer button{
+    bottom: -100px;
 }

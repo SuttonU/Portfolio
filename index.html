@@ -36,7 +36,7 @@
     <!-----------------------------------About me-->
     <div id="about-me">
         <div class="container">
-            <h1 class="sub-title Title">About Me</h1>
+            <h1 class="title2 Title">About Me</h1>
             <div class="row">
                 <!--image-->
                 <div class="about-left">
@@ -65,7 +65,7 @@
     <!--------------------------Projects section---------------------------->
     <div id="portfolio">
         <div class="container"> 
-            <h1 class="sub-title Title">My Projects</h1>
+            <h1 class="title2 Title">My Projects</h1>
             <div class="row">
                 <div class="proj-left">
                     <h2>Battle Ship</h2>
@@ -120,10 +120,12 @@
     <script src="https://kit.fontawesome.com/586d232b53.js" crossorigin="anonymous"></script>
 
     <footer id="footer" class="container">
-            <h1 class="sub-title">
-                More Info
-            </h1>
-            <div class="row">
+            <button onclick="openFooter()" id="openFooter" type="button">
+                <h1 class="title2">
+                    More Info
+                </h1>
+            </button>
+            <div class="row" id="footRow">
                 <div class="col-1">
                     
                     <h2>Socials</h2>
@@ -156,10 +158,27 @@
 </body>
 <script>
     var sidemenu = document.getElementById("sidemenu");
+    var mFootRow = document.getElementById("footRow");
     function openmenu() {
         sidemenu.style.right= "0";
     }
     function closemenu(){
-        sidemenu.style.right= "-200px"
+        sidemenu.style.right= "-200px";
+    }
+    function wait(ms) {
+        let start = Date.now();
+        let now = start;
+        while (now - start < ms) {
+            now = Date.now();
+        }
+    }
+    function openFooter() {
+        if (mFootRow.style.bottom == "0px") {
+            mFootRow.style.bottom = "-400px";
+        }
+        else
+        {
+            mFootRow.style.bottom = "0";
+        }
     }
 </script>
